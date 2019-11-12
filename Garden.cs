@@ -68,6 +68,7 @@ mmm_________________mmmmmm__mmmmm_mm_____
 
                         Console.WriteLine("****************************************\n");
                         Console.WriteLine("Du går ned för trappan till trädgården där ser du en bod");
+                        Console.WriteLine(bodart);
                         
                         Console.WriteLine("\nTryck Enter för att forsätta");
                         Console.ReadKey();

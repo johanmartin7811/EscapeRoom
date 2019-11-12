@@ -93,6 +93,7 @@ __   _______ _   _   _     _____ _____ _____
                             Console.WriteLine("Tryck Enter för att fortsätta");
                             Console.ReadKey();
                             Console.Clear();
+                            inventory.hasSalmon = false;
                             return 5;
                         }
                         if (!inventory.hasSalmon)
@@ -112,10 +113,11 @@ __   _______ _   _   _     _____ _____ _____
                         if (inventory.hasGun)
                         {
                            
-                            Console.WriteLine("***************************************\n");
+                           
                             Console.WriteLine("Björnen blev arg och dödade dig");
                             Console.WriteLine("Tryck Enter för att fortsätta");
                             Console.ReadKey();
+                            inventory.hasGun = false;
                             
                             
                             for (int i = 0; i < 4; i++)
