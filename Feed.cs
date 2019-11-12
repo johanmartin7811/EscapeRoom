@@ -94,6 +94,7 @@ __   _______ _   _   _     _____ _____ _____
                             Console.ReadKey();
                             Console.Clear();
                             inventory.hasSalmon = false;
+                            
                             return 5;
                         }
                         if (!inventory.hasSalmon)
