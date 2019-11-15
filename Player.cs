@@ -33,7 +33,7 @@ namespace EscapeRoom
 
 
 ";
-                string charArt = @"
+                string player = @"
 
 
             /:\                .------\ /------.
@@ -80,8 +80,8 @@ namespace EscapeRoom
             do
             {
                 Console.Clear();
-                Console.Write(charArt);
-                Console.WriteLine(@"Välj karaktär genom att trycka 'A' eller 'B'");
+                Console.Write(player, arnold );
+                Console.WriteLine(@"Välj karaktär genom att trycka 'A' eller 'B' eller 'T'");
 
                 pressKey = Console.ReadKey().Key.ToString();
                 pressKey = pressKey.ToUpper();

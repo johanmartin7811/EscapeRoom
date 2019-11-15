@@ -110,7 +110,7 @@ __   _______ _   _   _     _____ _____ _____
 
                     //om du skjuter DÖR du
                     case "skjuta":
-                        //om du väljer arnold dödöar du björnen
+                        //om du väljer arnold dödar du björnen
                         if (characterType == 3 && inventory.hasGun)
                         
                             Console.WriteLine("***************************************\n");
@@ -155,8 +155,8 @@ __   _______ _   _   _     _____ _____ _____
                             choice = "mata";
                             return 2;
                         }
-                        break;
-                }
+                       
+                
 
 
                 
