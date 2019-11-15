@@ -52,8 +52,9 @@ ______ _____  ___ ______      _____ _   _______
             // Kommer till korsningen 
             Console.WriteLine("***************************************\n");
             Console.WriteLine(crossing);
-            Console.WriteLine("Vill du gå åt höger eller vänster");
+            Console.WriteLine("Vill du gå åt höger eller vänster ");
             string choice = Console.ReadLine().ToLower();
+            
             Console.Clear();
 
             do

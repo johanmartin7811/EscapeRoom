@@ -12,9 +12,9 @@ namespace EscapeRoom
 
         public int Room4(int characterType)
 
+            
 
         {
-
 
             string choice = "";
             string dead =
@@ -94,7 +94,7 @@ __   _______ _   _   _     _____ _____ _____
                             Console.ReadKey();
                             Console.Clear();
                             inventory.hasSalmon = false;
-                            
+                                                        
                             return 5;
                         }
                         if (!inventory.hasSalmon)
@@ -110,11 +110,20 @@ __   _______ _   _   _     _____ _____ _____
 
                     //om du skjuter DÖR du
                     case "skjuta":
+                        //om du väljer arnold dödöar du björnen
+                        if (characterType == 3 && inventory.hasGun)
+                        
+                            Console.WriteLine("***************************************\n");
+                            Console.WriteLine("Du dödade björnen med din minigun och du gick vidare till Centralstationen");
+                            Console.WriteLine("Tryck Enter för att fortsätta");
+                            Console.ReadKey();
+                            inventory.hasGun = false;
+                            return 5;
+                        }
 
                         if (inventory.hasGun)
                         {
-                           
-                           
+                            Console.WriteLine("***************************************\n");
                             Console.WriteLine("Björnen blev arg och dödade dig");
                             Console.WriteLine("Tryck Enter för att fortsätta");
                             Console.ReadKey();
